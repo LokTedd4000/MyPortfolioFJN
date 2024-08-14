@@ -13,8 +13,8 @@
 </head>
 <body id="back">
     <header >
-    <div id="BorderLine">
-        <ul id="TopBar" class="nav justify-content-center">
+    <div id="BorderLineTop">
+        <ul id="TopBar" class="navbar justify-content-center fixed-top">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
             </li>
@@ -40,7 +40,7 @@
                     Si deseas conocer que es lo que quiero y/o aspiro tener en mi ambito laboral, saber sobre mis gustos, hobbys, etc., ¡Te invito a dar click en el botón "Conóceme"!
                     </p>
                 </div>
-                <div class="col">
+                <div class="col pb-4">
                     <img src="img/photo1.png" class="img-thumbnail" id="Photo" alt="My profile picture">
                     <button class="btn buttonAbountUs" style="vertical-align:middle"><span>¡Conóceme!</span></button>
                 </div>
@@ -50,8 +50,14 @@
         <section id="Port" class="container-fluid">
             <h2 class="text-center pt-4">Portafolio</h2>
             
-            <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
                 <div class="col">
+
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+<!--
                   <div class="card h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
@@ -59,8 +65,17 @@
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
+                  
                 </div>
+                
                 <div class="col">
+
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+
+                
                   <div class="card h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
@@ -68,67 +83,104 @@
                       <p class="card-text">This is a short card.</p>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="col">
-                  <div class="card h-100">
+
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+
+              <div class="card h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
                   </div>
+                    
                 </div>
                 <div class="col">
-                  <div class="card h-100">
+
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+
+              <div class="card h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
+                  
                 </div>
                 <div class="col">
-                    <div class="card h-100">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
+                    
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+
+              <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
+                  </div>
+
                   </div>
                   <div class="col">
-                    <div class="card h-100">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
+                    
+                  <picture>
+                    <source srcset="..." type="image/svg+xml">
+                    <img src="..." class="img-fluid img-thumbnail" alt="...">
+                  </picture>
+
+              <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
+
+                  </div>
+-->                  
               </div>
 
 
         </section>
 
     </main>
-    <footer class="footerContact">
+    <footer class="footerContact" id="BorderLineBotton">
 
-        <div class="container text-center">
+        <div class="container-fluid text-center">
             <div class="row row-cols-1 row-cols-md-2 g-2">
               <div class="col">
-                <i class="fa-brands fa-github fa-bounce fa-2xl fondoIcono"></i>
-                
-
-                <a href="https://www.facebook.com/tuperfil" target="_blank">
-                    <img src="img/icono-facebook.png" alt="Facebook" class="icono-social">
-                </a>
-
-
-
-
+                <div class="row row-cols-3 row-cols-md-3 g-3">
+                  <div class="col">
+                    <a href="https://www.facebook.com/julietanferreyra" target="_blank">
+                      <img src="img/icons8-facebook-nuevo-64.png" alt="Facebook" class="icono-social bounce">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://github.com/LokTedd4000/" target="_blank">
+                      <img src="img/icons8-github-64.png" alt="GitHub" class="icono-social bounce">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://www.linkedin.com/in/julieta-nahir-ferreyra/" target="_blank">
+                      <img src="img/icons8-linkedin-64.png" alt="LinkedIn" class="icono-social bounce">
+                    </a>
+                  </div>
+                </div>
               </div>
               <div class="col">
-                <p>&copy; 2024 Mi Portafolio</p>
+                <p>&copy; 2024 Mi Portafolio - Ferreyra, Julieta Nahir</p>
                 <p>Iconos de <a target="_blank" href="https://icons8.com">Icons8</a></p>
               </div>
             </div>
