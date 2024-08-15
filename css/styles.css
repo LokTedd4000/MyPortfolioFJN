@@ -11,7 +11,7 @@ body {
 
 #TopBar{
     background-color: #200e3e;
-    background: rgb(18,12,43);
+    background: rgb(18, 12, 43);
     background: linear-gradient(333deg, rgba(18,12,43,1) 39%, rgba(150,129,245,1) 96%);
     padding: 1.5vw;
 }
@@ -69,15 +69,48 @@ body {
     color: white !important; 
 }
 
+/* Abount us*/
+
 .card>h1 {
-    padding: 1.5vw 1vh;
-    text-align: center;    
+  padding: 1.5vw 1vh;
+  text-align: center;  
 }
 
 #AbountUs{
-    text-align: justify;
-    padding-left: 3vw;
+  text-align: justify;
+  padding-left: 3vw;
 }
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    white 0%,
+    #120c2b 25%,
+    #447dd5 50%,
+    #44c4d5 75%,
+    white 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 3vw;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 /*Foto de perfil*/
 
@@ -106,6 +139,7 @@ body {
     width: 250px;
     cursor: pointer;
     color: #FFF;
+    margin: 3vh 0;
   }
 
 .buttonAbountUs {
@@ -116,6 +150,7 @@ body {
   .buttonAbountUs span {
     transition: all 0.3s;
     color: #FFF;
+
   }
   .buttonAbountUs::before {
     content: '';
@@ -146,7 +181,7 @@ body {
   .buttonAbountUs::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     width: 100%;
     height: 100%;
