@@ -1,4 +1,4 @@
-*{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -203,7 +203,7 @@
     padding-top: 3vw;
 }
 
-#footerContact{
+.footerContact{
     color: #fff;
     padding: 3vh 1vw;
 }
@@ -236,8 +236,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: rgb(18, 12, 43);
   background: linear-gradient(333deg, rgba(18,12,43,1) 39%, rgba(150,129,245,1) 96%);
+
   padding: 0 0.4rem;
 }
 
