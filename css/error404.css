@@ -57,7 +57,7 @@ animation: Bounce 2s ease infinite;
 
 
 body{
-  background: url("/img/error404.png") no-repeat;
+  background: url("../img/error404.png") no-repeat;
   background-size: cover;  
   overflow: hidden;
   display: flex;
