@@ -24,3 +24,14 @@ navWrapper.addEventListener("click", e => {
     toggleButton.classList.remove("close");
   }
 });
+
+/*
+Cerramos el menú cuando se selecciona cualquier enlace dentro de la navegación
+*/
+const navLinks = document.querySelectorAll(".link-item");
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navWrapper.classList.remove("show");
+    toggleButton.classList.remove("close");
+  });
+});

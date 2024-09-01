@@ -34,7 +34,7 @@
   text-align: center;
   display: flex;
   position: fixed;
-  top: 41vw;
+  top: 39vw;
   width: 100%; 
   height: 100%;
 }
@@ -130,7 +130,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  margin-bottom: -8vh;
   background: rgb(18, 12, 43);
   background: linear-gradient(333deg, rgba(18,12,43,1) 39%, rgba(150,129,245,1) 96%);
   padding: 0 0.4rem;
@@ -140,6 +140,7 @@ body{
   color: rgb(255, 255, 255);
   font-size: 32px;
   text-decoration: none;
+  padding-top: -50vh;
 }
 
 .main-nav {
