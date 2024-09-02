@@ -226,7 +226,7 @@ body{
 
 /*================Responsive===================*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 344px) {
   
   #BorderLineTop{
     width: 100%;
@@ -236,7 +236,7 @@ body{
 
   .main-header {
     height: 7vh;
-    margin-top: -48vh;
+    margin-top: -57vh;
     
   }
 
@@ -250,7 +250,58 @@ body{
   }
 
   .footerContact{
-    top: 180vw;
+    top: 190vw;
+  }
+
+  .text{
+    font-size: 0.5em;
+    padding-top: 70vw;
+    padding-right: 6vw;
+    margin-right: 8vw;
+  }
+
+  .text h1{
+    margin-left: 20vw;
+  }
+
+  .text h2{
+    font-size: 5em;
+    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
+    margin-left: 20vw;
+  }
+
+  .text h3{
+    margin-left: 15vw;
+  }
+
+
+}
+
+@media screen and (min-width: 345px) and (max-width: 360px) {
+  
+  #BorderLineTop{
+    width: 100%;
+    padding-top: 1vw;
+    border-bottom: 0.5px;
+  }
+
+  .main-header {
+    height: 7vh;
+    margin-top: -52vh;
+    
+  }
+
+  .animate-charcter{
+    font-size: 9vw;
+  }
+
+  .nav-links {
+    background: rgb(18,12,43);
+    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
+  }
+
+  .footerContact{
+    top: 150vw;
   }
 
   .text{
@@ -277,12 +328,64 @@ body{
 
 }
 
-@media  screen and (min-width: 321px) and (max-width:349px){
+@media screen and (min-width: 361px) and (max-width: 375px) {
+  
+  #BorderLineTop{
+    width: 100%;
+    padding-top: 1vw;
+    border-bottom: 0.5px;
+  }
+
+  .main-header {
+    height: 7vh;
+    margin-top: -46vh;
+    
+  }
+
+  .animate-charcter{
+    font-size: 9vw;
+  }
+
+  .nav-links {
+    background: rgb(18,12,43);
+    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
+  }
+
+  .footerContact{
+    top: 130vw;
+  }
+
+  .text{
+    font-size: 0.5em;
+    padding-top: 60vw;
+    padding-right: 6vw;
+    margin-right: 8vw;
+  }
+
+  .text h1{
+    margin-left: 20vw;
+  }
+
+  .text h2{
+    font-size: 5em;
+    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
+    margin-left: 20vw;
+  }
+
+  .text h3{
+    margin-left: 15vw;
+  }
+
+
+}
+
+
+@media  screen and (min-width: 376px) and (max-width:414px){
   
   .main-header {
     padding-top: 5vw;
     height: 8vh;
-    margin-top: -48vh;
+    margin-top: -61vh;
   }
 
   .animate-charcter{
@@ -330,12 +433,12 @@ body{
 
 }
 
-@media  screen and (min-width: 350px) and (max-width:490px){
+@media  screen and (min-width: 415px) and (max-width:430px){
   
   .main-header {
     padding-top: 5vw;
     height: 8vh;
-    margin-top: -48vh;
+    margin-top: -62vh;
   }
 
   .animate-charcter{
@@ -356,7 +459,7 @@ body{
   }
 
   .footerContact{
-    top: 125vw;
+    top: 165vw;
   }
 
   .text{
@@ -383,6 +486,8 @@ body{
 
 }
 
+
+/*
 @media  screen and (min-width: 491px) and (max-width:535px){
   
   .main-header {
@@ -435,8 +540,8 @@ body{
 
 
 }
-
-@media  screen and (min-width: 536px) and (max-width:580px){
+*/
+@media  screen and (min-width: 540px) and (max-width:580px){
   
   .main-header {
     padding-top: 5vw;
@@ -462,12 +567,12 @@ body{
   }
 
   .footerContact{
-    top: 105vw;
+    top: 99vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
+    padding-top: 65vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -488,7 +593,7 @@ body{
 
 
 }
-
+/*
 @media  screen and (min-width: 581px) and (max-width:620px){
   
   .main-header {
@@ -700,13 +805,14 @@ body{
 
 
 }
+*/
 
-@media  screen and (min-width: 768px) and (max-width: 815px){
+@media  screen and (min-width: 768px) and (max-width: 819px){
   
   .main-header {
     padding-top: 5vw;
     height: 10vh;
-    margin-top: -31vh;
+    margin-top: -40vh;
   }
 
   .animate-charcter{
@@ -748,12 +854,12 @@ body{
   }
 
   .footerContact{
-    top: 80vw;
+    top: 110vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
+    padding-top: 80vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -775,12 +881,12 @@ body{
 
 }
 
-@media  screen and (min-width: 816px) and (max-width: 855px){
+@media  screen and (min-width: 820px) and (max-width: 1023px){
   
   .main-header {
     padding-top: 5vw;
     height: 10vh;
-    margin-top: -28vh;
+    margin-top: -41vh;
   }
 
   .animate-charcter{
@@ -822,12 +928,12 @@ body{
   }
 
   .footerContact{
-    top: 80vw;
+    top: 125vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
+    padding-top: 85vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -848,7 +954,7 @@ body{
 
 
 }
-
+/*
 @media  screen and (min-width: 856px) and (max-width: 900px){
   
   .main-header {
@@ -1070,13 +1176,14 @@ body{
 
 
 }
+*/
 
-@media  screen and (min-width: 1021px) and (max-width: 1082px){
+@media  screen and (min-width: 1024px) and (max-width: 1082px){
   
   .main-header {
     padding-top: 5vw;
     height: 12vh;
-    margin-top: -10vh;
+    margin-top: -41vh;
   }
 
   .animate-charcter{
@@ -1118,12 +1225,12 @@ body{
   }
 
   .footerContact{
-    top: 60vw;
+    top: 115vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
+    padding-top: 80vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -1145,6 +1252,28 @@ body{
 
 }
 
+
+@media screen and (max-height: 600px) and (min-width: 1024px){
+  .main-header {
+    padding-top: 5vw;
+    height: 10vh;
+    margin-top: -3vh;
+  }
+
+  .text{
+    font-size: 0.5em;
+    padding-top: 55vw;
+    padding-right: 6vw;
+    margin-right: 8vw;
+  }
+
+  .footerContact{
+    top: 48vw;
+  }
+}
+
+
+/*
 @media  screen and (min-width: 1083px) and (max-width: 1182px){
   
   .main-header {
@@ -1366,13 +1495,13 @@ body{
 
 
 }
-
-@media  screen and (min-width: 1282px) and (max-width: 1299px){
+*/
+@media  screen and (min-width: 1280px) and (max-width: 1299px){
   
   .main-header {
     padding-top: 5vw;
     height: 11vh;
-    margin-top: -2vh;
+    margin-top: -10vh;
   }
 
   .animate-charcter{
@@ -1414,7 +1543,7 @@ body{
   }
 
   .footerContact{
-    top: 50vw;
+    top: 52vw;
   }
 
   .text{
@@ -1441,11 +1570,12 @@ body{
 
 }
 
+
 @media  screen and (min-width: 1300px){
   
   .main-header {
     height: 10vh;
-    margin-top: -2vw;
+    margin-top: -4vw;
   }
 
   .main-logo {
@@ -1482,5 +1612,9 @@ body{
     padding-top: 45vw;
 
   } 
+
+  .footerContact{
+    top: 41vw;
+  }
 
 }
