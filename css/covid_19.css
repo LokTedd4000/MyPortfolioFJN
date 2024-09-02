@@ -530,3 +530,23 @@ background-color: #555;
 opacity: 1;
 visibility: visible;
 }
+
+
+/* Estilo del contenedor para mantener la proporción del iframe */
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Proporción 16:9 (altura / anchura * 100%) */
+  /* Ajusta este valor si tu iframe tiene una proporción diferente */
+  overflow: hidden;
+  background: #000; /* Fondo negro para el contenedor cuando el iframe no está visible */
+}
+
+/* Estilo del iframe para ocupar todo el contenedor */
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
