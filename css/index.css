@@ -238,13 +238,14 @@
   align-items: center;
   background: rgb(18, 12, 43);
   background: linear-gradient(333deg, rgba(18,12,43,1) 39%, rgba(150,129,245,1) 96%);
-  padding: 0 0.4rem;
+  padding: 1rem 0.5rem;
 }
 
 .main-logo {
   color: rgb(255, 255, 255);
   font-size: 32px;
   text-decoration: none;
+  padding-bottom: -10vw;
 }
 
 .main-nav {
@@ -369,7 +370,8 @@
 
   .main-header {
     padding-top: 5vw;
-    height: 7vh;
+    height: 9vh;
+    padding: 0rem 0.5rem;
   }
 
   .animate-charcter{
@@ -380,6 +382,11 @@
     background: rgb(18,12,43);
     background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
   }
+
+  .btn.btn-danger{
+    margin: 0 -20vw;
+  }
+
 }
 
 @media  screen and (min-width: 321px) and (max-width:375px){
@@ -433,6 +440,13 @@
   .nav-links {
     background: rgb(18,12,43);
     background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
+  }
+
+  .btn.btn-danger{
+    height: 8vh;
+    width: 15vw;
+    font-size: 0.8rem;
+    margin: 0 -20vw;
   }
 }
 
@@ -522,4 +536,45 @@
     align-content: center;
     
   }
+}
+
+/*PagesUp*/
+
+#button {
+  display: inline-block;
+  width: 70px; /* Ajusta este tamaño según el tamaño de tu imagen */
+  height: 70px; /* Ajusta este tamaño según el tamaño de tu imagen */
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+#button img {
+  width: 100%; /* La imagen se ajustará al tamaño del contenedor */
+  height: auto;
+}
+
+#button::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
