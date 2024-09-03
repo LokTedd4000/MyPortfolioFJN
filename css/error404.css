@@ -34,7 +34,7 @@
   text-align: center;
   display: flex;
   position: fixed;
-  top: 39vw;
+  top: 80vh;
   width: 100%; 
   height: 100%;
 }
@@ -56,7 +56,7 @@ animation: Bounce 2s ease infinite;
 }
 
 
-body{
+#fondo{
   background: url("../img/error404.png") no-repeat;
   background-size: cover;  
   overflow: hidden;
@@ -64,13 +64,13 @@ body{
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 100vw; 
+  width: auto; 
   height: 100vh;
 }
 
 .text h1{
   color: white;
-  font-size: 15em;
+  font-size: 10em;
   text-align: center;
   text-shadow: -5px 5px 0px rgba(255, 255, 255, 0.7), -10px 10px 0px rgba(250, 250, 250, 0.4), -15px 15px 0px rgba(253, 252, 252, 0.2);
   font-family: monospace;
@@ -82,7 +82,7 @@ body{
 
 .text h2{
   color: black;
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -5px 5px 0px rgba(0,0,0,0.7);
   text-align: center;
   font-family: monospace;
@@ -92,36 +92,13 @@ body{
 .text h3{
   color: white;
   margin-left: 30px;
-  font-size: 2em;
+  font-size: 1.5em;
   text-shadow: -5px 5px 0px rgba(0,0,0,0.7);
   text-align: center;
   font-family: monospace;
   font-weight: bold;
 }
 
-/*
-.torch {
-  margin: -150px 0 0 -150px;
-  width: 200px;
-  height: 200px;
-  box-shadow: 0 0 0 9999em #000000f7;
-  opacity: 1;
-  border-radius: 50%;
-  position: fixed;
-  background: rgba(0,0,0,0.3);
-}
-
-.torch:after{
-  content: '';
-  display: block;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  box-shadow: inset 0 0 40px 2px #000,
-    0 0 20px 4px rgba(13,13,10,0.2);  
-}
 
 
 /*================Nuevo Nav===================*/
@@ -130,17 +107,18 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -8vh;
+  margin-top: 0vw;
   background: rgb(18, 12, 43);
   background: linear-gradient(333deg, rgba(18,12,43,1) 39%, rgba(150,129,245,1) 96%);
   padding: 0 0.4rem;
+  z-index: 100;
 }
 
 .main-logo {
   color: rgb(255, 255, 255);
   font-size: 32px;
   text-decoration: none;
-  padding-top: -50vh;
+  padding-bottom: 5vh;
 }
 
 .main-nav {
@@ -226,22 +204,12 @@ body{
 
 /*================Responsive===================*/
 
-@media screen and (max-width: 344px) {
+@media screen and (max-width: 320px) {
   
   #BorderLineTop{
     width: 100%;
     padding-top: 1vw;
     border-bottom: 0.5px;
-  }
-
-  .main-header {
-    height: 7vh;
-    margin-top: -57vh;
-    
-  }
-
-  .animate-charcter{
-    font-size: 9vw;
   }
 
   .nav-links {
@@ -250,142 +218,31 @@ body{
   }
 
   .footerContact{
-    top: 190vw;
+    top: 95vw;
   }
 
   .text{
-    font-size: 0.5em;
-    padding-top: 70vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    font-size: 0.4em;
+    padding-bottom: 25vh;
   }
 
-  .text h1{
-    margin-left: 20vw;
+  #fondo{
+    width: auto; 
+    height: 90vh;
   }
 
-  .text h2{
-    font-size: 5em;
-    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
-    margin-left: 20vw;
+  .main-logo {
+    padding-bottom: 1vh;
   }
-
-  .text h3{
-    margin-left: 15vw;
-  }
-
 
 }
 
-@media screen and (min-width: 345px) and (max-width: 360px) {
-  
-  #BorderLineTop{
-    width: 100%;
-    padding-top: 1vw;
-    border-bottom: 0.5px;
-  }
-
-  .main-header {
-    height: 7vh;
-    margin-top: -52vh;
-    
-  }
-
-  .animate-charcter{
-    font-size: 9vw;
-  }
-
-  .nav-links {
-    background: rgb(18,12,43);
-    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
-  }
-
-  .footerContact{
-    top: 150vw;
-  }
-
-  .text{
-    font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
-  }
-
-  .text h1{
-    margin-left: 20vw;
-  }
-
-  .text h2{
-    font-size: 5em;
-    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
-    margin-left: 20vw;
-  }
-
-  .text h3{
-    margin-left: 15vw;
-  }
-
-
-}
-
-@media screen and (min-width: 361px) and (max-width: 375px) {
-  
-  #BorderLineTop{
-    width: 100%;
-    padding-top: 1vw;
-    border-bottom: 0.5px;
-  }
-
-  .main-header {
-    height: 7vh;
-    margin-top: -46vh;
-    
-  }
-
-  .animate-charcter{
-    font-size: 9vw;
-  }
-
-  .nav-links {
-    background: rgb(18,12,43);
-    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
-  }
-
-  .footerContact{
-    top: 130vw;
-  }
-
-  .text{
-    font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
-  }
-
-  .text h1{
-    margin-left: 20vw;
-  }
-
-  .text h2{
-    font-size: 5em;
-    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
-    margin-left: 20vw;
-  }
-
-  .text h3{
-    margin-left: 15vw;
-  }
-
-
-}
-
-
-@media  screen and (min-width: 376px) and (max-width:414px){
+@media  screen and (min-width: 321px) and (max-width:349px){
   
   .main-header {
     padding-top: 5vw;
     height: 8vh;
-    margin-top: -61vh;
+    margin-top: -48vh;
   }
 
   .animate-charcter{
@@ -433,12 +290,11 @@ body{
 
 }
 
-@media  screen and (min-width: 415px) and (max-width:430px){
+@media  screen and (min-width: 350px) and (max-width:490px){
   
   .main-header {
     padding-top: 5vw;
-    height: 8vh;
-    margin-top: -62vh;
+       
   }
 
   .animate-charcter{
@@ -446,7 +302,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 1vh;
+    padding-bottom: -0.1vh;
   }
 
   .button-menu{
@@ -459,41 +315,26 @@ body{
   }
 
   .footerContact{
-    top: 165vw;
+    top: 75vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    padding-bottom: 25vw;
   }
 
-  .text h1{
-    margin-left: 20vw;
+  #fondo{
+    width: auto; 
+    height: 88vh;
   }
-
-  .text h2{
-    font-size: 5em;
-    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
-    margin-left: 20vw;
-  }
-
-  .text h3{
-    margin-left: 15vw;
-  }
-
 
 }
 
-
-/*
 @media  screen and (min-width: 491px) and (max-width:535px){
   
   .main-header {
     padding-top: 5vw;
     height: 8vh;
-    margin-top: -45vh;
   }
 
   .animate-charcter{
@@ -540,13 +381,12 @@ body{
 
 
 }
-*/
-@media  screen and (min-width: 540px) and (max-width:580px){
+
+@media  screen and (min-width: 536px) and (max-width:580px){
   
   .main-header {
     padding-top: 5vw;
     height: 8vh;
-    margin-top: -46vh;
   }
 
   .animate-charcter{
@@ -567,60 +407,7 @@ body{
   }
 
   .footerContact{
-    top: 99vw;
-  }
-
-  .text{
-    font-size: 0.5em;
-    padding-top: 65vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
-  }
-
-  .text h1{
-    margin-left: 20vw;
-  }
-
-  .text h2{
-    font-size: 5em;
-    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
-    margin-left: 20vw;
-  }
-
-  .text h3{
-    margin-left: 15vw;
-  }
-
-
-}
-/*
-@media  screen and (min-width: 581px) and (max-width:620px){
-  
-  .main-header {
-    padding-top: 5vw;
-    height: 8vh;
-    margin-top: -46vh;
-  }
-
-  .animate-charcter{
-    font-size: 9vw;
-  }
-
-  .main-logo {
-    padding-bottom: 1.5vh;
-  }
-
-  .button-menu{
-    padding-bottom: 3vw;
-  }
-
-  .nav-links {
-    background: rgb(18,12,43);
-    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
-  }
-
-  .footerContact{
-    top: 95vw;
+    top: 105vw;
   }
 
   .text{
@@ -645,14 +432,62 @@ body{
   }
 
 
+}
+
+@media  screen and (min-width: 581px) and (max-width:620px){
+  
+  .main-header {
+    padding-top: 5vw;
+    height: 10vh;
+  }
+
+  .animate-charcter{
+    font-size: 9vw;
+  }
+
+  .main-logo {
+    padding-bottom: 6vh;
+  }
+
+  .button-menu{
+    padding-bottom: 3vw;
+  }
+
+  .nav-links {
+    background: rgb(18,12,43);
+    background: linear-gradient(12deg, rgba(18,12,43,1) 68%, rgba(150,129,245,1) 100%);
+  }
+
+  .footerContact{
+    top: 50vw;
+  }
+
+  .text{
+    font-size: 0.5em;
+    padding-top: 20vw;
+  }
+
+  .text h1{
+    margin-left: 20vw;
+  }
+
+  .text h2{
+    font-size: 5em;
+    text-shadow: -3px 3px 0px rgba(0,0,0,0.7);
+    margin-left: 20vw;
+  }
+
+  #fondo{
+    width: auto; 
+    height: 89vh;
+  }
 }
 
 @media  screen and (min-width: 621px) and (max-width:670px){
   
   .main-header {
     padding-top: 5vw;
-    height: 8vh;
-    margin-top: -44vh;
+    height: 11vh;
   }
 
   .animate-charcter{
@@ -660,7 +495,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 1.8vh;
+    padding-bottom: 5vh;
   }
 
   .button-menu{
@@ -673,14 +508,13 @@ body{
   }
 
   .footerContact{
-    top: 90vw;
+    top: 49vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    padding-top: 20vw;
+
   }
 
   .text h1{
@@ -697,15 +531,17 @@ body{
     margin-left: 15vw;
   }
 
-
+  #fondo{
+    width: auto; 
+    height: 89vh;
+  }
 }
 
 @media  screen and (min-width: 671px) and (max-width:700px){
   
   .main-header {
     padding-top: 5vw;
-    height: 9vh;
-    margin-top: -41vh;
+    height: 11vh;
   }
 
   .animate-charcter{
@@ -713,7 +549,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 1.8vh;
+    padding-bottom: 5vh;
   }
 
   .button-menu{
@@ -726,14 +562,12 @@ body{
   }
 
   .footerContact{
-    top: 85vw;
+    top: 45vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    padding-top: 20vw;
   }
 
   .text h1{
@@ -757,8 +591,7 @@ body{
   
   .main-header {
     padding-top: 5vw;
-    height: 9vh;
-    margin-top: -36vh;
+    height: 11vh;
   }
 
   .animate-charcter{
@@ -766,7 +599,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 1.8vh;
+    padding-bottom: 5vh;
   }
 
   .button-menu{
@@ -779,14 +612,13 @@ body{
   }
 
   .footerContact{
-    top: 75vw;
+    top: 45vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    padding-top: 25vw;
+    
   }
 
   .text h1{
@@ -803,16 +635,18 @@ body{
     margin-left: 15vw;
   }
 
+  #fondo{
+    width: auto; 
+    height: 89vh;
+  }
 
 }
-*/
 
-@media  screen and (min-width: 768px) and (max-width: 819px){
+@media  screen and (min-width: 768px) and (max-width: 815px){
   
   .main-header {
     padding-top: 5vw;
     height: 10vh;
-    margin-top: -40vh;
   }
 
   .animate-charcter{
@@ -820,7 +654,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 4vh;
+    padding-bottom: 7vh;
   }
   
   .container>.row{
@@ -854,14 +688,12 @@ body{
   }
 
   .footerContact{
-    top: 110vw;
+    top: 50vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 80vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
+    padding-top: 30vw;
   }
 
   .text h1{
@@ -878,15 +710,18 @@ body{
     margin-left: 15vw;
   }
 
+  #fondo{
+    width: auto; 
+    height: 89vh;
+  }
 
 }
 
-@media  screen and (min-width: 820px) and (max-width: 1023px){
+@media  screen and (min-width: 816px) and (max-width: 855px){
   
   .main-header {
     padding-top: 5vw;
-    height: 10vh;
-    margin-top: -41vh;
+    height: 12vh;
   }
 
   .animate-charcter{
@@ -894,7 +729,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
   }
   
   .container>.row{
@@ -928,12 +763,12 @@ body{
   }
 
   .footerContact{
-    top: 125vw;
+    top: 45vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 85vw;
+    padding-top: 35vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -952,15 +787,17 @@ body{
     margin-left: 15vw;
   }
 
-
+  #fondo{
+    width: auto; 
+    height: 88vh;
+  }
 }
-/*
+
 @media  screen and (min-width: 856px) and (max-width: 900px){
   
   .main-header {
     padding-top: 5vw;
-    height: 10vh;
-    margin-top: -25vh;
+    height: 12vh;
   }
 
   .animate-charcter{
@@ -968,7 +805,7 @@ body{
   }
 
   .main-logo {
-    padding-bottom: 4vh;
+    padding-bottom: 6vh;
   }
   
   .container>.row{
@@ -1002,12 +839,12 @@ body{
   }
 
   .footerContact{
-    top: 75vw;
+    top: 43vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 60vw;
+    padding-top: 45vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -1026,6 +863,10 @@ body{
     margin-left: 15vw;
   }
 
+  #fondo{
+    width: auto; 
+    height: 88vh;
+  }
 
 }
 
@@ -1034,7 +875,6 @@ body{
   .main-header {
     padding-top: 5vw;
     height: 10vh;
-    margin-top: -21vh;
   }
 
   .animate-charcter{
@@ -1108,7 +948,6 @@ body{
   .main-header {
     padding-top: 5vw;
     height: 12vh;
-    margin-top: -15vh;
   }
 
   .animate-charcter{
@@ -1176,14 +1015,12 @@ body{
 
 
 }
-*/
 
-@media  screen and (min-width: 1024px) and (max-width: 1082px){
+@media  screen and (min-width: 1021px) and (max-width: 1082px){
   
   .main-header {
     padding-top: 5vw;
     height: 12vh;
-    margin-top: -41vh;
   }
 
   .animate-charcter{
@@ -1225,12 +1062,12 @@ body{
   }
 
   .footerContact{
-    top: 115vw;
+    top: 55vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 80vw;
+    padding-top: 45vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -1249,37 +1086,18 @@ body{
     margin-left: 15vw;
   }
 
+  #fondo{
+    width: auto; 
+    height: 88vh;
+  }
 
 }
 
-
-@media screen and (max-height: 600px) and (min-width: 1024px){
-  .main-header {
-    padding-top: 5vw;
-    height: 10vh;
-    margin-top: -3vh;
-  }
-
-  .text{
-    font-size: 0.5em;
-    padding-top: 55vw;
-    padding-right: 6vw;
-    margin-right: 8vw;
-  }
-
-  .footerContact{
-    top: 48vw;
-  }
-}
-
-
-/*
 @media  screen and (min-width: 1083px) and (max-width: 1182px){
   
   .main-header {
     padding-top: 5vw;
     height: 11vh;
-    margin-top: -18vh;
   }
 
   .animate-charcter{
@@ -1321,12 +1139,12 @@ body{
   }
 
   .footerContact{
-    top: 60vw;
+    top: 55vw;
   }
 
   .text{
     font-size: 0.5em;
-    padding-top: 50vw;
+    padding-top: 45vw;
     padding-right: 6vw;
     margin-right: 8vw;
   }
@@ -1353,7 +1171,6 @@ body{
   .main-header {
     padding-top: 5vw;
     height: 11vh;
-    margin-top: -6vh;
   }
 
   .animate-charcter{
@@ -1427,7 +1244,7 @@ body{
   .main-header {
     padding-top: 5vw;
     height: 11vh;
-    margin-top: -0.9vh;
+    
   }
 
   .animate-charcter{
@@ -1495,13 +1312,12 @@ body{
 
 
 }
-*/
-@media  screen and (min-width: 1280px) and (max-width: 1299px){
+
+@media  screen and (min-width: 1282px) and (max-width: 1299px){
   
   .main-header {
     padding-top: 5vw;
     height: 11vh;
-    margin-top: -10vh;
   }
 
   .animate-charcter{
@@ -1543,7 +1359,7 @@ body{
   }
 
   .footerContact{
-    top: 52vw;
+    top: 50vw;
   }
 
   .text{
@@ -1570,17 +1386,7 @@ body{
 
 }
 
-
-@media  screen and (min-width: 1300px){
-  
-  .main-header {
-    height: 10vh;
-    margin-top: -4vw;
-  }
-
-  .main-logo {
-    padding-bottom: 4.5vh;
-  }
+@media  screen and (min-width: 1300px) and (max-width: 1440px){
   
   .button-menu {
     display: none;
@@ -1608,13 +1414,23 @@ body{
     margin-right: 2rem;
   }
 
+  .main-header {
+    height: 12vh;
+    margin-top: -1vw;
+  }
+
+  .main-logo {
+    padding-bottom: 4.5vh;
+  }
+  
   .text{
     padding-top: 45vw;
 
   } 
 
-  .footerContact{
-    top: 41vw;
+  #fondo{
+    width: auto; 
+    height: 89vh;
   }
 
 }
