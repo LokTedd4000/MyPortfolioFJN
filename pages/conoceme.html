@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
 </head>
 <body id="back">
@@ -59,186 +60,186 @@
           <img src="../img/icons8-page-up-button-100.png" alt="Botón de regreso al inicio" />
         </a>
 
-        <section class="container-fluid" id="cono">
-            
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#HistLaboralC">Historial laboral completo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#Hobbies">Hobbies e intereses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#Habilidades">Habilidades</a>
-            </li>
-          </ul>
+      <section class="container-fluid " id="cono">
+        
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="HistLab-tab" data-bs-toggle="tab" data-bs-target="#HistLab-tab-pane" type="button" role="tab" aria-controls="HistLab-tab-pane" aria-selected="true">Historial laboral completo</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="Hobbies-tab" data-bs-toggle="tab" data-bs-target="#Hobbies-tab-pane" type="button" role="tab" aria-controls="Hobbies-tab-pane" aria-selected="false">Hobbies e intereses</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Habilidades</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="HistLab-tab-pane" role="tabpanel" aria-labelledby="HistLab-tab" tabindex="0">
 
-          <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane container active" id="HistLaboralC">
-            
-                <section class="cd-horizontal-timeline">
-                    <div class="timeline">
-                        <div class="events-wrapper">
-                            <div class="events">
-                                <ol>
-                                    <li><a href="#0" data-date="20/10/2016" class="selected">Octubre 2016</a></li>
-                                    <li><a href="#0" data-date="23/08/2017">Agosto 2017</a></li>
-                                    <li><a href="#0" data-date="03/12/2018">Diciembre 2018</a></li>
-                                    <li><a href="#0" data-date="31/01/2022">Enero 2022</a></li>
-                                    <li><a href="#0" data-date="18/12/2023">Diciembre 2023</a></li>
-                                </ol>
-                
-                                <span class="filling-line" aria-hidden="true"></span>
-                            </div> <!-- .events -->
-                        </div> <!-- .events-wrapper -->
-                            
-                        <ul class="cd-timeline-navigation">
-                            <li><a href="#0" class="prev inactive">Prev</a></li>
-                            <li><a href="#0" class="next">Next</a></li>
-                        </ul> <!-- .cd-timeline-navigation -->
-                    </div> <!-- .timeline -->
-                
-                    <div class="events-content">
-                        <ol>
-                            <li class="selected" data-date="20/10/2016">
-                                <h2>Docente reemplazante de Música.</h2>
-                        <em>Octubre, 2016</em>
-                                <p>	
-                                    Desempeñe el rol de maestra de música en niveles inciales, desde jardín hasta 3° en la escuela "Federico Helguera", ubicada en Buenos Aires, T4000 San Miguel de Tucumán, Tucumán.
-                                </p>
-                                <p>Mis tareas eran desarrollar la creatividad de los alumnos dándoles elementos comunes de la vida cotidiana para generar interes en el ambito musical, además de mostrar las diferentes culturas musicales existentes sacándolos de su zona de confort y los conocimientos básicos de la materia, tales como lectura de partitura, escalas, figuras musicales, etc.</p>
-                            </li>
-                
-                            <li data-date="23/08/2017">
-                                <h2>Docente reemplazante de Música.</h2>
-                                <em>Agosto, 2017</em>
-                                <p>	
-                                    Desempeñe el rol de maestra de música en niveles inciales, desde jardín hasta 1° en las siguientes escuelas:
-                                    
-                                    <div class="list">
-                                        <ul>♦ Justiniano Frias, ubicada en Av. Camino del Perú 1600, T4000 San Miguel de Tucumán, Tucumán.</ul>
-                                        <ul>♦ Alberto Garcia Hamilton, ubicada en Felix de Olazabal 350, T4000 San Miguel de Tucumán, Tucumán.</ul>
-                                    </div>                      
-                                </p>
-                            <p>En esta ocasión, al tener el cargo por tan poco tiempo, decidí acomodar el tiempo y desarrolle un programa para trabajar con los alumnos el desarrollo de la creatividad inspirando que crearan su propia musica utilizando instrumentos creados por ellos mismos y los que otorgaba la escuela.</p>
-                            </li>
-                
-                            <li data-date="03/12/2018">
-                                <h2>Representante del servicio de atención al cliente en Teleperformance.</h2>
-                                <em>Diciembre, 2018</em>
-                                <p>	
-                                Experiencia en la resolución de consultas y la gestión de necesidades de los clientes, creando así, experiencias únicas. Mi compromiso con la satisfacción del cliente me ha permitido desarrollar habilidades clave que impulsan el servicio de alta calidad, además, de crear y mejorar procesos.</p>
-                            </li>
-                            
-                            <li data-date="31/01/2022">
-                                <h2>Workforce Management Analyst - Control Online (GTR) en Teleperformance</h2>
-                                <em>Enero, 2022</em>
-                                <p>	
-                                    Analista WFM Mission Control
-                                    <div class="list">
-                                        <ul>♦ Gestión en Tiempo Real (GTR)</ul>
-                                        <ul>♦ Control de Kpis de Call Center, con la finalidad de mejorar la productividad de las operaciones.</ul>
-                                        <ul>♦ Confección de Reportes en Excel, manuales y automáticos a través de macros y consultas SQL.</ul>
-                                        <ul>♦ Generación de pronósticos a corto plazo. </ul>
-                                    </div>
-                                </p>
-                            </li>
+            <section class="cd-horizontal-timeline">
+              <div class="timeline">
+                  <div class="events-wrapper">
+                      <div class="events">
+                          <ol>
+                              <li><a href="#0" data-date="20/10/2016" class="selected">Octubre 2016</a></li>
+                              <li><a href="#0" data-date="23/08/2017">Agosto 2017</a></li>
+                              <li><a href="#0" data-date="03/12/2018">Diciembre 2018</a></li>
+                              <li><a href="#0" data-date="31/01/2022">Enero 2022</a></li>
+                              <li><a href="#0" data-date="18/12/2023">Diciembre 2023</a></li>
+                          </ol>
+          
+                          <span class="filling-line" aria-hidden="true"></span>
+                      </div> <!-- .events -->
+                  </div> <!-- .events-wrapper -->
+                      
+                  <ul class="cd-timeline-navigation">
+                      <li><a href="#0" class="prev inactive">Prev</a></li>
+                      <li><a href="#0" class="next">Next</a></li>
+                  </ul> <!-- .cd-timeline-navigation -->
+              </div> <!-- .timeline -->
+          
+              <div class="events-content ">
+                  <ol>
+                      <li class="selected" data-date="20/10/2016">
+                          <h2>Docente reemplazante de Música.</h2>
+                  <em>Octubre, 2016</em>
+                          <p>	
+                              Desempeñe el rol de maestra de música en niveles inciales, desde jardín hasta 3° en la escuela "Federico Helguera", ubicada en Buenos Aires, T4000 San Miguel de Tucumán, Tucumán.
+                          </p>
+                          <p>Mis tareas eran desarrollar la creatividad de los alumnos dándoles elementos comunes de la vida cotidiana para generar interes en el ambito musical, además de mostrar las diferentes culturas musicales existentes sacándolos de su zona de confort y los conocimientos básicos de la materia, tales como lectura de partitura, escalas, figuras musicales, etc.</p>
+                      </li>
+          
+                      <li data-date="23/08/2017">
+                          <h2>Docente reemplazante de Música.</h2>
+                          <em>Agosto, 2017</em>
+                          <p>	
+                              Desempeñe el rol de maestra de música en niveles inciales, desde jardín hasta 1° en las siguientes escuelas:
+                              
+                              <div class="list">
+                                  <ul>♦ Justiniano Frias, ubicada en Av. Camino del Perú 1600, T4000 San Miguel de Tucumán, Tucumán.</ul>
+                                  <ul>♦ Alberto Garcia Hamilton, ubicada en Felix de Olazabal 350, T4000 San Miguel de Tucumán, Tucumán.</ul>
+                              </div>                      
+                          </p>
+                      <p>En esta ocasión, al tener el cargo por tan poco tiempo, decidí acomodar el tiempo y desarrolle un programa para trabajar con los alumnos el desarrollo de la creatividad inspirando que crearan su propia musica utilizando instrumentos creados por ellos mismos y los que otorgaba la escuela.</p>
+                      </li>
+          
+                      <li data-date="03/12/2018">
+                          <h2>Representante del servicio de atención al cliente en Teleperformance.</h2>
+                          <em>Diciembre, 2018</em>
+                          <p>	
+                          Experiencia en la resolución de consultas y la gestión de necesidades de los clientes, creando así, experiencias únicas. Mi compromiso con la satisfacción del cliente me ha permitido desarrollar habilidades clave que impulsan el servicio de alta calidad, además, de crear y mejorar procesos.</p>
+                      </li>
+                      
+                      <li data-date="31/01/2022">
+                          <h2>Workforce Management Analyst - Control Online (GTR) en Teleperformance</h2>
+                          <em>Enero, 2022</em>
+                          <p>	
+                              Analista WFM Mission Control
+                              <div class="list">
+                                  <ul>♦ Gestión en Tiempo Real (GTR)</ul>
+                                  <ul>♦ Control de Kpis de Call Center, con la finalidad de mejorar la productividad de las operaciones.</ul>
+                                  <ul>♦ Confección de Reportes en Excel, manuales y automáticos a través de macros y consultas SQL.</ul>
+                                  <ul>♦ Generación de pronósticos a corto plazo. </ul>
+                              </div>
+                          </p>
+                      </li>
 
-                            <li data-date="18/12/2023">
-                                <h2>Workforce Management - DA & Reporting Analyst en Teleperformance</h2>
-                                <em>Diciembre, 2023</em>
-                                <p>	
-                                    Analista WFM de informes
-                                    <div class="list">
-                                        <ul>♦ Desarrollo y mantenimiento de informes en Power BI y Excel.</ul>
-                                        <ul>♦ Consultas en bases de datos a través de SQL Server.</ul>
-                                        <ul>♦ Automatización y optimización de procesos.</ul>
-                                        <ul>♦ Proceso de ETL.</ul>
-                                    </div>
-                                </p>
-                            </li>
+                      <li data-date="18/12/2023">
+                          <h2>Workforce Management - DA & Reporting Analyst en Teleperformance</h2>
+                          <em>Diciembre, 2023</em>
+                          <p>	
+                              Analista WFM de informes
+                              <div class="list">
+                                  <ul>♦ Desarrollo y mantenimiento de informes en Power BI y Excel.</ul>
+                                  <ul>♦ Consultas en bases de datos a través de SQL Server.</ul>
+                                  <ul>♦ Automatización y optimización de procesos.</ul>
+                                  <ul>♦ Proceso de ETL.</ul>
+                              </div>
+                          </p>
+                      </li>
 
 
-                        </ol>
-                    </div> <!-- .events-content -->
-                </section>
-
-            </div>     
-        </div>
-
-            <div class="tab-pane container fade" id="Hobbies">
-              
-              <section>
-               
-
-                
-
-
-              </section>
-
-            </div>
-
-            <div class="tab-pane container fade" id="Habilidades">
-            <section>
-              
-                <div class="content">
-                    <div class="profile-skills">
-                        <div>
-                            <input type="checkbox" id="sk1">
-                            <label for="sk1"></label>
-                            <ul class="skills skills1">
-                                <li class="sk-cms"><span>CMS</span></li>
-                                <li class="sk-dtb"><span>DDBB</span></li>
-                                <li class="sk-dis"><span>Design</span></li>
-                                <li class="sk-pro"><span>Programing</span></li>
-                                <li class="sk-ani"><span>Animation</span></li>
-                                <li class="more">
-                                    <input type="checkbox" id="more-con"><label for="more-con"></label>
-                                    <div><span>PHOTO</span><span>API</span><span>MAPS</span><span>VIDEO</span><span>CHARTS</span><span>RWD</span></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="sk2">
-                        <label for="sk2"></label>
-                        <ul class="skills skills2">
-                            <li class="sk-gim"><span>Gimp</span></li>
-                            <li class="sk-ado"><span>Adobe&nbsp;CC</span></li>
-                            <li class="sk-not"><span>Notepad++</span></li>
-                            <li class="sk-tri"><span>Tridion</span></li>
-                            <li class="sk-wor"><span>Wordpress</span></li>
-                            <li class="more">
-                                <input type="checkbox" id="more-pro"><label for="more-pro"></label>
-                                <div><span>JOOMLA</span><span>DRUPAL</span><span>JIRA</span><span>TRELLO</span><span>FILEZILLA</span><span>GIT</span></div>
-                            </li>
-                        </ul>
-                        </div>
-                        <div>
-                        <input type="checkbox" id="sk3">
-                        <label for="sk3"></label>
-                        <ul class="skills skills3">
-                            <li class="sk-css"><span>CSS</span></li>
-                            <li class="sk-htm"><span>HTML</span></li>
-                            <li class="sk-jav"><span>JS</span></li>
-                            <li class="sk-php"><span>PHP</span></li>
-                            <li class="sk-sql"><span>SQL</span></li>
-                            <li class="more">
-                                <input type="checkbox" id="more-len"><label for="more-len"></label>
-                                <div><span>XHTML</span><span>XSL</span><span>XML</span><span>JSON</span><span>PUG</span><span>SASS</span></div>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-
-                        
+                  </ol>
+              </div> <!-- .events-content -->
             </section>
-            </div>
+
           </div>
 
-        </section>
+          <div class="tab-pane fade" id="Hobbies-tab-pane" role="tabpanel" aria-labelledby="Hobbies-tab" tabindex="0">
+
+            <section id="Hobbies">
+              <div class="row">
+
+                <div class="col-12" id="textHb">
+                  ¿Quieres conocer mi nivel de cuanto conocimiento considero que tengo en todos mis hobbies?
+                  <img src="../img/icons8-guiño-100.png" alt="Carita con guiño" width="90">
+                  <br>
+                  <button class="w3-button" id="btnHb"
+                  onclick="move()">¡Click!</button>
+                </div>
+
+              </div>              
+
+              <h3>Hobbies</h3>
+              
+              <div class="row">
+                <div class="col-10">
+                    <div>
+                      <h5>Tocar el piano</h5>
+                      <div class="w3-light-grey w3-round-xlarge">
+                        <div id="myBar1" class="w3-container color w3-center w3-round-xlarge" style="height:45px;width:0%">0%</div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-2">
+                    <img src="../img/icons8-piano-100.png" alt="piano">
+                  </div>
+              </div>
+              
+              
+            </section>
+
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+        </div>
+        
+        
+        
+        <!--
+        <!-- Nav tabs   
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#HistLaboralC">Historial laboral completo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Hobbies">Hobbies e intereses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Habilidades">Habilidades</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes 
+         <div class="tab-content">
+
+            <div class="tab-pane container active" id="HistLaboralC">
+              
+                <h2>Hola</h2>
+
+            </div>
+            <div class="tab-pane container fade" id="Hobbies">
+
+                <h2>Hola</h2>
+
+            </div>
+            <div class="tab-pane container fade" id="Habilidades">
+
+                <h2>Hola</h2>  
+
+            </div>
+
+         </div> -->
+      </section>
 
     </main>
     <footer id="footerContact" id="BorderLineBotton">

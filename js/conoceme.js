@@ -305,3 +305,20 @@ jQuery(document).ready(function($){
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 });
+
+/* Hobbies*/
+function move() {
+	var elem = document.getElementById("myBar1");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 90) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
