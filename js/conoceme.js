@@ -307,12 +307,58 @@ jQuery(document).ready(function($){
 });
 
 /* Hobbies*/
-function move() {
-	var elem = document.getElementById("myBar1");   
+
+function movePiano() {
+	var elem = document.getElementById("myBarPiano");   
 	var width = 0;
 	var id = setInterval(frame, 10);
 	function frame() {
 	  if (width >= 90) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
+  function moveJardin() {
+	var elem = document.getElementById("myBarJar");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 80) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
+  function moveGame() {
+	var elem = document.getElementById("myBarGame");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 100) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
+  function moveSax() {
+	var elem = document.getElementById("myBarSax");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 50) {
 		clearInterval(id);
 	  } else {
 		width++; 
