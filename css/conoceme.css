@@ -1620,6 +1620,46 @@ ul.skills li.more input:checked + label:hover {
     font-size: 2.5em !important;
   }
 
+  .content{ 
+    padding-top: 7vh;
+    height: auto;
+  }
+
+  ul.skills:before {
+    font-size: 10vw;
+  }
+  
+  ul.skills2:before {
+  font-size: 5vw;
+  }
+
+  ul.skills3:before {
+    font-size: 8vw;
+  }
+
+  label[for="sk1"] {
+    left: 7vw;
+  }
+
+  label[for="sk2"] {
+    left: 7vw;
+  }
+
+  label[for="sk3"] {
+    left: 7vw;
+  }
+
+  .Hob{
+    flex-direction: column;
+  }
+  .col-2>img{
+    padding-left: 15vw;
+  }
+
+  #textHb{
+    margin-bottom: 5vh;
+  }
+
   }
   
   @media  screen and (min-width: 376px) and (max-width:770px){
@@ -1659,6 +1699,46 @@ ul.skills li.more input:checked + label:hover {
 
   .cd-horizontal-timeline .events-content h2 {
     font-size: 3em !important;
+  }
+
+  .content{ 
+    padding-top: 7vh;
+    height: auto;
+  }
+
+  ul.skills:before {
+    font-size: 10vw;
+  }
+  
+  ul.skills2:before {
+  font-size: 5vw;
+  }
+
+  ul.skills3:before {
+    font-size: 8vw;
+  }
+
+  label[for="sk1"] {
+    left: 7vw;
+  }
+
+  label[for="sk2"] {
+    left: 7vw;
+  }
+
+  label[for="sk3"] {
+    left: 7vw;
+  }
+
+  .Hob{
+    flex-direction: column;
+  }
+  .col-2>img{
+    padding-left: 15vw;
+  }
+
+  #textHb{
+    margin-bottom: 5vh;
   }
 
   }
@@ -1706,6 +1786,46 @@ ul.skills li.more input:checked + label:hover {
     display: inline-block;
     margin-top: -0.5vw;
     margin-right: 2rem;
+  }
+
+  .content{ 
+    padding-top: 7vh;
+    height: auto;
+  }
+
+  ul.skills:before {
+    font-size: 10vw;
+  }
+  
+  ul.skills2:before {
+  font-size: 5vw;
+  }
+
+  ul.skills3:before {
+    font-size: 8vw;
+  }
+
+  label[for="sk1"] {
+    left: 7vw;
+  }
+
+  label[for="sk2"] {
+    left: 7vw;
+  }
+
+  label[for="sk3"] {
+    left: 7vw;
+  }
+
+  .Hob{
+    flex-direction: column;
+  }
+  .col-2>img{
+    padding-left: 15vw;
+  }
+
+  #textHb{
+    margin-bottom: 5vh;
   }
   
   }
