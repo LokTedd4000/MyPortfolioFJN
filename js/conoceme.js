@@ -368,3 +368,48 @@ function movePiano() {
 	}
   };
 
+  function moveArco() {
+	var elem = document.getElementById("myBarArco");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 95) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
+  function moveGato() {
+	var elem = document.getElementById("myBarGato");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 100) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
+  function moveCocina() {
+	var elem = document.getElementById("myBarCocina");   
+	var width = 0;
+	var id = setInterval(frame, 10);
+	function frame() {
+	  if (width >= 75) {
+		clearInterval(id);
+	  } else {
+		width++; 
+		elem.style.width = width + '%'; 
+		elem.innerHTML = width * 1  + '%';
+	  }
+	}
+  };
+
