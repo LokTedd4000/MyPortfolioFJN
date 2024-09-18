@@ -355,6 +355,7 @@
 .btnDeco{
   text-decoration: none;
   color: #fff;
+  
 }
 
 
@@ -448,6 +449,11 @@
     font-size: 0.8rem;
     margin: 0 -20vw;
   }
+
+  .btn-danger{
+    width: 100% !important;
+  }
+
 }
 
 @media  screen and (min-width: 771px) and (max-width:991px){
