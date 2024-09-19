@@ -1386,7 +1386,7 @@ animation: Bounce 2s ease infinite;
 
 }
 
-@media  screen and (min-width: 1300px) and (max-width: 1440px){
+@media  screen and (min-width: 1300px){
   
   .button-menu {
     display: none;
