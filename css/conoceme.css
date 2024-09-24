@@ -1539,10 +1539,39 @@ ul.skills li.more input:checked + label:hover {
 	}
 }
 
+/*         Cerfiticados         */
 
+#Certificados{
+  margin: 0 10vw;
+}
 
+.accordion-body>img{
+  width: 50vw;
+}
 
+.accordion-item{
+  background-color: #512d8ac2 !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(68, 196, 213, 0.39) !important;
+}
 
+.accordion-button:not(.collapsed) {
+  background: rgb(18,12,43);
+background: linear-gradient(90deg, rgba(18,12,43,1) 0%, rgba(104,71,157,1) 69%, rgba(176,160,246,1) 96%);
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button {
+  color: white;
+}
+
+.accordion-button:not(.collapsed){
+  color: white !important;
+}
+
+.accordion-button.collapsed{
+  color: white;
+  background: rgb(18,12,43);
+  background: linear-gradient(90deg, rgba(18,12,43,1) 0%, rgba(104,71,157,1) 69%, rgba(176,160,246,1) 96%);
+}
 
 
 /*================Responsive===================*/
