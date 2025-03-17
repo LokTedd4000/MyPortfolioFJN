@@ -111,7 +111,7 @@
           <div class="tab-content">
             <div class="tab-pane container fade" id="Video">
               <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/aRZY0ThA7ag?si=c3S7sXHYYpSgstui" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/zfX9h-X0TRI?si=k0RSKiqC8Ws0JgKG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
             <div class="tab-pane container active" id="PowerBi">
@@ -153,102 +153,131 @@
               <ul>
                 <li>
                     <p>Análisis del archivo CSV</p>
-                        <ol>Se descargó el datasets proporcionados por Kaggle. Este archivo contenía información por empleado, edad, genero, rol, industria, años de experiencia, horas trabajadas a la semana, cantidad de reutiones realizadas, un rating del balance del trabajo y la vida personal, nivel de estrés, condición mental reportada a la empresa, si tienen o no acceso a salud mental, cambios en la productivadad, rating de aislamiento social, nivel de satisfacción con trabajar de forma remota, soporte de la empresa por trabajar en remoto, actividad física, calidad del sueño y región .</ol>
-                        <ol>Se analizó el CSV para identificar qué columnas eran relevantes para la creación de las tablas y las dimensiones. También se agregó una columna de fecha para poder cumplir con los requisitos de la entrega del proyecto, dicha fecha, se la obtuvo teniendo en cuenta la edad mínima del todos los empleados y la fecha máxima de ingreso se tomo la fecha cuando fue realizado el proyecto, para luego hacer una formula que me traiga número al azar entre esos números.</ol>
+                        <ol>Se descargó el datasets proporcionado por Kaggle. Este archivo contenía información por empleado, edad, genero, rol, industria, años de experiencia, horas trabajadas a la semana, cantidad de reutiones realizadas, un rating del balance del trabajo y la vida personal, nivel de estrés, condición mental reportada a la empresa, si tienen o no acceso a salud mental, cambios en la productivadad, rating de aislamiento social, nivel de satisfacción con trabajar de forma remota, soporte de la empresa por trabajar en remoto, actividad física, calidad del sueño y región .</ol>
+                        <ol>Se analizó el CSV para identificar qué columnas eran relevantes para la creación de las tablas y las dimensiones. También se agregó una columna de fecha para poder cumplir con los requisitos de la entrega del proyecto, dicha fecha, se la obtuvo con la función "=ALEATORIO.ENTRE" usando cómo valor mínimo la edad mínima de todos los empleados y como valor máximo la fecha que se realizó el proyecto.</ol>
+            </br>
+                        <ol>Datasets crudo:</ol>
+                        <ol>
+                          <img src="../img/TrabajoRemoto/Crudo.png" alt="Datasets crudo sin normalizar.">
+                        </ol>
+            </br>
+                        <ol>Datasets Normalizado:</ol>
+                        <ol>
+                          <img src="../img/TrabajoRemoto/TablaNormalizada.png" alt="Datasets normalizar.">
+                        </ol>
+
                 </li>
             </br>
                 <li>
                     <p>Diseño de la tablas de Dimensionamiento</p>
-                        <ol>Se decidió crear una base de datos en SQL Server para almacenar y procesar los datos de manera eficiente, estructurada y acumulativa.</ol>
-                        <ol>Se diseñaron las siguientes tablas principales que almacenan los datos crudos:
+                        <ol>DimGender</ol>
+                        <ol>Genero del empleado.
                             <ul>
                                 <section>
-                                    <img src="../img/PoblacionArgentina/CreacionDeTablas.png" alt="Creación de tablas en SQL Server">
+                                    <img src="../img/TrabajoRemoto/DimGender.png" alt="Tabla dimensionada por genero">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimJobRole</ol>
+                        <ol>Rol del empleado en la empresa.
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimJobRole.png" alt="Tabla dimensionada por rol">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimIndustry</ol>
+                        <ol>Industria a la cual pertenece el empleado.
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimIndustry.png" alt="Tabla dimensionada por industria">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimWorkLocation</ol>
+                        <ol>Modalidad de trabajo del empleado, si es híbrido, remoto u onsite.
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimWorkLocation.png" alt="Tabla dimensionada por modalidad de trabajo.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimStressLevel</ol>
+                        <ol>Nivel de estrés del empleado. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimStressLevel.png" alt="Tabla dimensionada por nivel de estrés.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimCondition</ol>
+                        <ol>Última condición del estado mental reportado por el empleado. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimCondition.png" alt="Tabla dimensionada por enfermedad reportada.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimProductivityChange</ol>
+                        <ol>Si el empleado se siente productivo. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimProductivityChange.png" alt="Tabla dimensionada por si cambio de productividad.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimSatisfactionRemote</ol>
+                        <ol>Si el empleado esta satisfecho trabajando de manera remota.
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimSatisfactionRemote.png" alt="Tabla dimensionada de satisfacción.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimPhysicalAct</ol>
+                        <ol>Actividad física del empleado. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimPhysicalAct.png" alt="Tabla dimensionada de cuanta actividad física tiene el empleado.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimSleep</ol>
+                        <ol>Calidad del sueño del empleado. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimSleep.png" alt="Tabla dimensionada de calidad del sueño del empleado.">
+                                </section>
+                            </ul>
+                        </ol>
+                        </br>
+                        <ol>DimRegion</ol>
+                        <ol>La región a la cual pertenece el empleado. 
+                            <ul>
+                                <section>
+                                    <img src="../img/TrabajoRemoto/DimRegion.png" alt="Tabla dimensionada de la región.">
                                 </section>
                             </ul>
                         </ol>
                 </li>
-            </br>
-                <li>
-                    <p>Creación de Dimensiones</p>
-                    <ul>
-                        <ol>
-                            Con base en el análisis inicial, se identificaron dimensiones clave para hacer más eficiente la carga de datos y optimizar consultas. Estas dimensiones se actualizan cada vez que se corre el proceso de carga de datos:
-                            <ul>
-                                <li>dimProvincia</li>
-                                <li>dimGenero</li>
-                                <li>dimPaisNacimiento</li>
-                                <li>dimNacionalidad</li>
-                                <li>dimDepartamento</li>
-                            </ul>
-                        </ol>
-                    </ul>                        
-                </li>
-            </br>
-                <li>
-                    <p>Creación de Procedimientos Almacenados</p>
-                    <ol>Para automatizar el proceso de carga y evitar duplicados, se crearon procedimientos almacenados, que se encargan de importar los archivos, limpiar los datos y hacer los insert finales en las tablas.</ol>
-                    <ol>
-                    </br>
-                        <p>SP para Población por Provincia:</p>
-                        <ol>
-                            Se desarrolló un procedimiento almacenado llamado [dbo].[spImportPoblacionProvincia] que sigue estos pasos:
-                            <ol>
-                                <li>Importación a través de un BULK.</li>
-                                <li>Se utiliza el nombre del archivo para extraer la fecha del periodo.</li>
-                                <li>Se dropean y recrean las dimensiones mencionadas anteriormente.</li>
-                                <li>Los datos son cargados en una tabla temporal, donde se corrigen los caracteres no válidos y se asigna el periodo.</li>
-                                <li>Se eliminan los duplicados y los datos son insertados en la tabla final [PoblacionProvincia].</li>
-                                <li>Finalmente, se zipea el archivo y se mueve a una carpeta de procesados, añadiendo la fecha y hora actual al nombre del archivo.</li>
-                            </ol>
-                        </ol>
-                    </br>
-                        <p>SP para Población por Departamento:</p>
-                        <ol>
-                            El SP [dbo].[spImportPoblacionDepartamento] realiza pasos similares, con las siguientes diferencias:
-                            <ol>
-                                <li>Se crea y actualiza la dimensión [dimDepartamento].</li>
-                                <li>Se corrigen problemas específicos del CSV de departamentos, como la falta de IDs en provincias y departamentos.</li>
-                                <li>Se agregan IDs específicos para casos como "General Felipe Varela" y "Ciudad Autónoma de Buenos Aires", utilizando sus códigos postales y IDs correspondientes.</li>
-                            </ol>
-                        </ol>
-                    </br>
-                        <p>SP para Nacimientos:</p>
-                        <ol>
-                            El procedimiento almacenado [dbo].[spImportNacimiento] sigue la misma lógica que los anteriores:
-                            <ol>
-                                <li>Se corrigen datos faltantes y caracteres no válidos.</li>
-                                <li>Se actualizan IDs y se hace un inner join con departamentos para asignar los IDs correspondientes.</li>
-                                <li>Los datos se insertan en la tabla [Nacimientos] tras eliminar duplicados.</li>
-                                <li>Los archivos se zipean y se mueven a su ubicación final.</li>
-                            </ol>
-                        </ol>
-                    </ol>
-                </li>
-            </br>
-                <li>
-                    <p>Automatización y Prevención de Duplicados</p>
-                    <ol>
-                        <li>Todos los SP fueron diseñados para automatizar la carga de datos de manera acumulativa, asegurando que no se pierda información previa.</li>
-                        <li>Se incluyó la lógica para evitar duplicados en cada paso del proceso, y se creó un sistema robusto de zipeado y almacenamiento histórico de los archivos procesados.</li>
-                    </ol>
-                </li>
-            </br>
-                <li>
-                    <p>Zip y mover archivos procesados</p>
-                    <ol>
-                        <li>Una vez completado cada proceso de importación, los archivos CSV se zipean y se mueven a una carpeta específica de procesados, asegurando que los datos históricos permanezcan intactos y que los archivos no se reemplacen.</li>
-                        <li>El nombre de cada archivo zipeado incluye la fecha y hora del procesamiento, lo que permite una identificación precisa de cuándo fueron procesados los datos.</li>
-                    </ol>
-                </li>
-              </ul>              
+            </ul>              
             </br>
             <ul>
-                <p>Beneficios de la Implementación</p>
-                <ol>⭐Automatización Total: Los datos son procesados automáticamente con la simple carga de un archivo, sin necesidad de intervención manual.</ol>
-                <ol>⭐Eficiencia: El uso de dimensiones y la eliminación de duplicados optimizan el rendimiento y la calidad de los datos.</ol>
-                <ol>⭐Preservación Histórica: Los archivos zipeados garantizan la integridad de los datos históricos sin reemplazar archivos previos.</ol>
-                <ol>⭐Flexibilidad y Escalabilidad: El sistema puede fácilmente adaptarse a nuevas actualizaciones de datos, simplemente cargando nuevos archivos CSV y ejecutando los SP.</ol>
+                <p>Alcance del informe:</p>
+                <ol>El alcance del reporte se centra en brindar una comprensión de cómo las diferentes modalidades de trabajo afectan el bienestar de los empleados. El análisis podría ser utilizado para tomar decisiones estratégicas relacionadas con las políticas de trabajo remoto y bienestar laboral. </ol>
+                <ol>Los usuarios finales podrían llegar a ser:</ol>
+                <ol>⭐Departamento de RRHH, ejemplo: aplicar programas de apoyo para empleados según los resultados del análisis.</ol>
+                <ol>⭐Gerentes y Líderes, ejemplo: identificar patrones de estrés o insatisfacción en sus equipos para poder ajustar la carga laboral y aplicar estrategias personalizadas para aumentar la satisfacción laboral. </ol>
+                <ol>⭐Gobiernos, ejemplo: lograr entender tendencias en el empleo y el bienestar laboral, ayudando a regular las políticas de trabajo remoto.</ol>
             </ul>
 
             </section>
