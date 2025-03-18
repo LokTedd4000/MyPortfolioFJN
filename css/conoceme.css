@@ -695,10 +695,13 @@ ol, li{
     line-height: 1.6;
     
   }
+
   @media only screen and (min-width: 768px) {
+    /*
     .cd-horizontal-timeline .events-content h2 {
       font-size: 7rem;
     }
+    */
     .cd-horizontal-timeline .events-content em {
       font-size: 1.5em !important;
     }
@@ -1799,6 +1802,7 @@ background: linear-gradient(90deg, rgba(18,12,43,1) 0%, rgba(104,71,157,1) 69%, 
   }
 
   }
+  
   
   @media  screen and (min-width: 771px) and (max-width:991px){
   

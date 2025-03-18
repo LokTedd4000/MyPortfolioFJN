@@ -30,7 +30,7 @@ navWrapper.addEventListener("click", e => {
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 70;
+	eventsMinDistance = 130;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -38,21 +38,48 @@ jQuery(document).ready(function($){
 		timelines.each(function(){
 			var timeline = $(this),
 				timelineComponents = {};
-			//cache timeline components 
-			timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
-			timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
-			timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
-			timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');
-			timelineComponents['timelineDates'] = parseDate(timelineComponents['timelineEvents']);
-			timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
-			timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
-			timelineComponents['eventsContent'] = timeline.children('.events-content');
+			//cache timeline components
+			timelineComponents["timelineWrapper"] = timeline.find(".events-wrapper");
+			timelineComponents["eventsWrapper"] =
+			  timelineComponents["timelineWrapper"].children(".events");
+			timelineComponents["fillingLine"] =
+			  timelineComponents["eventsWrapper"].children(".filling-line");
+			timelineComponents["timelineEvents"] =
+			  timelineComponents["eventsWrapper"].find("a");
+			timelineComponents["timelineDates"] = parseDate(
+			  timelineComponents["timelineEvents"]
+			);
+			timelineComponents["eventsMinLapse"] = minLapse(
+			  timelineComponents["timelineDates"]
+			);
+			timelineComponents["timelineNavigation"] = timeline.find(
+			  ".cd-timeline-navigation"
+			);
+			timelineComponents["eventsContent"] =
+			  timeline.children(".events-content");
 
+			// Ordenar las fechas de mayor a menor
+			var sortedDates = timelineComponents["timelineDates"].sort(function (a, b) {
+				return b - a; // Orden descendente (de mayor a menor)
+			  });
+
+			// Reordenar los eventos según las fechas ordenadas
+			timelineComponents["timelineEvents"].each(function (index) {
+				var eventDate = timelineComponents["timelineDates"][index];
+				var sortedIndex = sortedDates.indexOf(eventDate);
+				$(this).css("left", (sortedIndex + 2) * eventsMinDistance + "px");
+			  });
+			
 			//assign a left postion to the single events along the timeline
+			// Asignar posiciones sin solapamientos
 			setDatePosition(timelineComponents, eventsMinDistance);
+
 			//assign a width to the timeline
+			//Recalcular el ancho total de la línea de tiempo
 			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+
 			//the timeline has been initialize - show it
+			//La línea de tiempo ya está inicializada - mostrarla
 			timeline.addClass('loaded');
 
 			//detect click on the next arrow
@@ -60,11 +87,13 @@ jQuery(document).ready(function($){
 				event.preventDefault();
 				updateSlide(timelineComponents, timelineTotWidth, 'next');
 			});
+
 			//detect click on the prev arrow
 			timelineComponents['timelineNavigation'].on('click', '.prev', function(event){
 				event.preventDefault();
 				updateSlide(timelineComponents, timelineTotWidth, 'prev');
 			});
+
 			//detect click on the a single event - show new event content
 			timelineComponents['eventsWrapper'].on('click', 'a', function(event){
 				event.preventDefault();
@@ -104,7 +133,7 @@ jQuery(document).ready(function($){
 		(string == 'next') 
 			? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
 			: translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
-	}
+	}	
 
 	function showNewContent(timelineComponents, timelineTotWidth, string) {
 		//go from one event to the next/previous one
@@ -158,17 +187,26 @@ jQuery(document).ready(function($){
 	}
 
 	function setDatePosition(timelineComponents, min) {
+		// Reajustar las posiciones de los eventos para que no se solapen
+		var lastPosition = 0;
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
-		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
+			
+				var newPosition = distanceNorm * min;
+			if (newPosition <= lastPosition) {
+				newPosition = lastPosition + eventsMinDistance; // Asegurarse de que no se solapen
+			  }	
+		    timelineComponents['timelineEvents'].eq(i).css('left', newPosition +'px');
+
+			lastPosition = newPosition; // Actualizar la posición del último evento
 		}
 	}
 
 	function setTimelineWidth(timelineComponents, width) {
 		var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length-1]),
 			timeSpanNorm = timeSpan/timelineComponents['eventsMinLapse'],
-			timeSpanNorm = Math.round(timeSpanNorm) + 4,
+			timeSpanNorm = Math.round(timeSpanNorm) + 5,
 			totalWidth = timeSpanNorm*width;
 		timelineComponents['eventsWrapper'].css('width', totalWidth+'px');
 		updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
