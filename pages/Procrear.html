@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julieta Nahir Ferreyra"/>
+    <meta name="description" content="Portafolio de Julieta Nahir Ferreyra.">
+    <meta name="keywords" content="Portafolio, Julieta, Nahir, Ferreyra, Power Bi">
+    <title>Mi Portafolio - Programa Procrear</title>
+    <link rel="stylesheet" href="../css/procrear.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/icons8-trasero-de-gato-100.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+        
+</head>
+<body id="back">
+
+  <header class="main-header" id="BorderLineTop">
+    <a class="main-logo" href="../index.html">
+      <strong>
+        <img src="../img/icons8-gato-64.png" alt="black cat">
+      </strong>
+    </a>
+    <nav id="nav" class="main-nav">
+      <div class="nav-links">
+        <a class="link-item" href="../index.html">Inicio</a>
+        <a class="link-item" href="../index.html#PointAboutUs">Acerca de mí</a>
+        <a class="link-item" href="../index.html#Port">Portafolio</a>
+        <a class="link-item" href="../index.html#footerContact">Contacto</a>
+      </div>
+    </nav>
+    <button id="button-menu" class="button-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+    <main id="PointAboutUs">
+        <section class="card container text-center sectionAbount">
+            <h1 class="animate-charcter">Informe del Préstamo Hipotecario Procrear</h1>
+            <div class="row align-items-center">
+              <div class="col-12" id="half">
+                <p class="firstL">
+                  Este proyecto lo desarrollé con mis propios datos; son los que fui acumulando mes a mes.
+                  Decidí hacer esto, ya que me había imaginado posibles soluciones para poder desocuparme lo antes posible del préstamo, y dada la mala experiencia que tuve, y mi pasión por darle historia a los reportes, decidí compartir mi experiencia juntando ambas cosas.
+                  Antes de llevarlo a este reporte, lo hice en Excel y me dio muchas ganas de probar qué tal quedaba en un reporte. De paso, la misión del mismo es que, al publicarlo, si alguien más tuvo la misma experiencia y quiere ver cómo se desarrollaría a la larga su crédito, se contacte conmigo y verlo sin compromiso.
+                  <p>Links del programa, banco y coeficiente casa propia.</p>
+                  <p>                  
+                  <a href="https://www.argentina.gob.ar/habitat/procrear">Procrear</a>.</p> 
+                  <p>
+                  <a href="https://www.hipotecario.com.ar/personas/procrear/">Banco Hipotecario - Programa Procrear</a>.</p> 
+                  <p>
+                  <a href="https://www.argentina.gob.ar/obras-publicas/coeficiente-casa-propia">Programa Procrear - Coeficiente Casa Propia</a>.</p> 
+
+                  <p>Estructura del Informe</p>
+                  <ol>
+                    <li>Resumen:
+                        <ul>⭐Aquí muestro en una división de pantalla por colores cómo era el crédito originalmente (color naranja)</ul>
+                        <ul>⭐Cómo es el crédito habiendo realizado adelantos (celeste)</ul>
+                        <ul>⭐Y, por último, en el medio, cómo queda el crédito con información de ambos lados, con las cuotas pagadas sin adelantos más las cuotas adelantadas.</ul>
+                    </li>
+                    <li>
+                        Histórico:
+                        <ul>⭐Se muestra cómo evolucionaron las cuotas con el paso del tiempo; la misma aumenta con el coeficiente casa propia.</ul>
+                        <ul>⭐Está el porcentaje de aumento de los últimos 6 meses.</ul>
+                        <ul>⭐El porcentaje de aumento histórico.</ul>
+                        <ul>⭐Muestra en un gráfico de anillos cuántas cuotas he pagado y cuántas me faltan.</ul>
+                    </li>
+                    <li>
+                      Proyección:
+                        <ul>⭐Se muestra en proyección cómo aumentarían las cuotas teniendo en cuenta el porcentaje de aumento de los últimos 6 meses.</ul>
+                    </li>
+                    <li>
+                      Diferentes escenarios:
+                      <ul>⭐Se puede observar 4 escenarios, los cuales se me ocurrió hacer en caso de abonar adelantos.</ul>
+                      <ul>⭐Cada escenario tiene una breve descripción de qué se trata.</ul>
+                      <ul>⭐Un slash para activar/desactivar el escenario y ver cuántas cuotas debería pagar con ese esquema, los años que me tardaría en cumplirlo y una fecha estimada en que finalizaría el préstamo.</ul>
+                      <ul>⭐Si se activan todos los escenarios con el slash del medio, se puede apreciar que, de forma dinámica, se seleccionaría el mejor escenario a elegir; en caso de que algo cambie, siempre se seleccionará el que lleve menos cantidad de años.</ul>
+                      <ul>⭐Si ingresamos a cada escenario, nos lleva a una hoja en la cual nos detalla el plan a seguir, cuánto gastaríamos para completarlo y cuánto sería el valor de la cuota a pagar ese mes.</ul>
+                      <ul>⭐¿Cuánto representa en cantidad las cuotas a abonar?</ul>
+                      <ul>⭐Por último, un gráfico de barras, el cual indica cada cuánto tenemos que hacer adelantos, la cantidad de adelanto representado en cuotas, y podemos observar de mejor manera cómo va incrementando el valor de la misma.</ul>
+                    </li>
+                    <li>
+                      Glosario - FAQ:
+                      <ul>⭐Se agregó una tabla que se divide en dos columnas: identificador y el detalle de qué significa ese identificador.</ul>
+                      <ul>⭐Se agregó una tabla con preguntas y respuestas.</ul>
+                      <ul>⭐Se agregó un texto breve contando mi historia con el crédito.</ul>
+                    </li>
+                  </ol>      
+                                    
+                <p>El reporte se divide en tres partes: la primera, segunda y tercera corresponden a las visualizaciones, y la cuarta es un detalle del trabajo realizado.</p>
+                <ol>
+                    <li>Video de YouTube</li>
+                    <li>Desde la web de Power BI (para aquellos con cuenta paga, permitiendo la interactividad).</li>
+                    <li>Mediante imágenes estáticas.</li>
+                    <li>Trabajo Realizado.</li>
+                </ol>
+              </div>
+            </div>
+        </section>
+
+        <a id="button">
+          <img src="../img/icons8-page-up-button-100.png" alt="Botón de regreso al inicio" />
+        </a>
+
+        <section class="container-fluid" id="portfolio">
+            
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#Video">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#PowerBi">Power Bi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#ImagenesE">Imagenes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#PortDes">Trabajo realizado</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane container fade" id="Video">
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/_rUFecCHZzU?si=RqZkRwrbK0xhd4pR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="tab-pane container active" id="PowerBi">
+              <div class="iframe-container">
+                <iframe title="ProcrearHipotecario" src="https://app.powerbi.com/reportEmbed?reportId=2dcc2bf7-c7e8-44c3-ad0b-2ce67bb0f485&autoAuth=true&ctid=843d9746-0674-48bf-a402-a45cd06f541a" frameborder="0" allowFullScreen="true"></iframe>
+              </div>
+            </div>
+
+            <div class="tab-pane container fade" id="ImagenesE">
+              
+              <section>
+                <img src="../img/Procrear/Portada.png" alt="Portada de informe programa Procrear">
+              </section>
+              <section>
+                <img src="../img/Procrear/Resumen.png" alt="Resumen del crédito">
+              </section>
+              <section>
+                <img src="../img/Procrear/Histórico.png" alt="Historico">
+              </section>
+              <section>
+                <img src="../img/Procrear/Proyección.png" alt="Proyección">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_BotonDesactivado.png" alt="Diferentes escenarios con los botones desactivados">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_BotonActivado.png" alt="Diferentes escenarios con los botones activados">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_1Activado.png" alt="Diferentes escenarios con el escenario 1 activado">
+              </section>
+              <section>
+                <img src="../img/Procrear/Escesario1.png" alt="Escenario 1">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_2Activado.png" alt="Diferentes escenarios con el escenario 2 activado">
+              </section>
+              <section>
+                <img src="../img/Procrear/Escesario2.png" alt="Escenario 2">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_1Mas2Activado.png" alt="Diferentes escenarios con el escenario 1+2 activado">
+              </section>
+              <section>
+                <img src="../img/Procrear/Escesario1y2.png" alt="Escenario 1+2">
+              </section>
+              <section>
+                <img src="../img/Procrear/DiferentesEscenario_3Activado.png" alt="Diferentes escenarios con el escenario 3 activado">
+              </section>
+              <section>
+                <img src="../img/Procrear/Escesario3.png" alt="Escenario 3">
+              </section>
+              <section>
+                <img src="../img/Procrear/Glosario-FAQ.png" alt="Glosario-FAQ">
+              </section>
+
+            </div>
+
+            <div class="tab-pane container fade" id="PortDes">
+            <section>
+              <p>El trabajo realizado en este reporte consta:</p>
+              <ul>
+                <li>
+                    <p>Creación del crudo:</p>
+                        <ol>
+                          <ul>Se creó un crudo con 4 columnas:</ul>
+                          <ul>Fecha ➡️ La fecha se creó para que haya datos del mes; cabe aclarar que no es la fecha en la cual se produce el débito automático.</ul>
+                          <ul>Cuotas ➡️ Se colocaron la cantidad de cuotas del préstamo, de la cuota 1 hasta la 360.</ul>
+                          <ul>Valor ➡️ Se colocó el valor de la cuota que llegaba por mail.</ul>
+                          <ul>Adelanto ➡️ Se pone el valor del adelanto realizado.</ul>
+                        </ol>
+            </br>
+                        <ol>Medidas:</ol>
+                        <ol>
+                          <p>Medidas para sacar la cantidad de años, habiendo previamente sumado la cantidad de cuotas, teniendo en cuenta que es 1 cuota por mes. </p>
+                          <img src="../img/Procrear/Medidas_Años.png" alt="Medidas para sacar los años">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>Cuenta la cantidad de cuotas que hay, en caso de adelantos, se multiplica por 3, ya que se observo que cada cuota adelantada baja 3 aproximadamente.</p>
+                          <img src="../img/Procrear/Medidas_Cuotas.png" alt="Medidas para sacar las cuotas">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>Se crea medida para sacar la última fecha en la que se cargó la cuota mensual.</p>
+                          <img src="../img/Procrear/Medidas_FechaAct.png" alt="Medidas para sacar la fecha máxima que se cargo la cuota">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>Medidas para calcular el monto de lo que se va pagando, ya sea con adelanto, sin adelanto o ambas.</p>
+                          <img src="../img/Procrear/Medidas_Montos.png" alt="Medidas para sacar los montos pagados">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>Medida que sirve para calcular el porcentaje de aumentos entre los últimos 6 meses de cuota.</p>
+                          <img src="../img/Procrear/Medidas_PorcAument.png" alt="Medidas para calcular el porcentaje de aumentos de los últimos 6 meses">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>Estás medidas sirve para poner seleccionar dinámicamente cual es el mejor escenario de los 4, teniendo en cuenta la es la menos cuotas hay que pagar.</p>
+                          <img src="../img/Procrear/Medidas_Escenarios1.png" alt="Medidas para calcular el mejor escenario">
+                          <img src="../img/Procrear/Medidas_Escenarios2.png" alt="Medidas para calcular el mejor escenario">
+                        </ol>
+            </br>
+                        <ol>Tablas:</ol>
+                        <ol>
+                          <p>Tabla proyección se realizo con Power Query, teniendo en cuenta la tabla Montos, y el % de aumento que tiene.</p>
+                          <img src="../img/Procrear/TablaProyeccion.png" alt="Tabla proyección">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>La tabla “Capital” se realiza a mano, mes a mes, se va a ir escribiendo de manera manual el monto, ya que el mismo depende de muchos factores para el aumento.</p>
+                          <img src="../img/Procrear/TablaCapital.png" alt="Tabla capital">
+                        </ol>
+            </br>            
+                        <ol>
+                          <p>La tabla “Montos”, si bien, se van cargando los montos de manera manual todos los meses, el % de aumento se calcula aquí y para ello se tuvo que crear una columna con el valor del monto anterior.</p>
+                          <img src="../img/Procrear/TablaMontos.png" alt="Tabla Montos">
+                        </ol>
+
+                </li>
+            </br>
+                <li>
+                    <p>Vista de modelo</p>
+                        <ol>
+                              <img src="../img/Procrear/VistaDeModelo.png" width="100%" alt="Vista de modelado">
+                        </ol>                     
+                </li>
+            </ul>              
+            </br>
+            <ul>
+                <p>Alcance del informe:</p>
+                <ol>El alcance de este reporte es para que puedas visualizar facilmente como vas con el crédito, cual es el mejor método para poder pagarlo y cuando se podría terminar de pagar.</ol>
+                <ol>Los usuarios finales podrían llegar a ser:</ol>
+                <ol>⭐Personas que deseen sacar un préstamo hipotecario.</ol>
+                <ol>⭐Personas que ya tengan el crédito hipotecario.</ol>
+                <ol>⭐Personas que estén en el programa del procrear.</ol>
+            </ul>
+
+            </section>
+            </div>
+          </div>
+
+        </section>
+
+    </main>
+    <footer id="footerContact" id="BorderLineBotton">
+
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+              <div class="col">
+                <div class="row row-cols-3 row-cols-md-3 g-3">
+                  <div class="col">
+                    <a href="https://www.facebook.com/julietanferreyra" target="_blank">
+                      <img src="../img/icons8-facebook-nuevo-64.png" alt="Facebook" class="icono-social bounce">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://github.com/LokTedd4000/" target="_blank">
+                      <img src="../img/icons8-github-64.png" alt="GitHub" class="icono-social bounce">
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://www.linkedin.com/in/julieta-nahir-ferreyra/" target="_blank">
+                      <img src="../img/icons8-linkedin-64.png" alt="LinkedIn" class="icono-social bounce">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <p>&copy; 2025 Mi Portafolio - Ferreyra, Julieta Nahir</p>
+                <p>Iconos de <a target="_blank" href="https://icons8.com">Icons8</a></p>
+              </div>
+            </div>
+          </div>
+
+    </footer>
+    <script src="../js/Procrear.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      var btn = $('#button');
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+        } else {
+          btn.removeClass('show');
+        }
+      });
+
+      btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+      });
+    </script>
+</body>
+</html>
